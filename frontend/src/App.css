@@ -1,0 +1,24 @@
+/* Animation */
+#title {
+	animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
+		animated-cursor 750ms steps(11, end) infinite;
+}
+
+@keyframes animated-text {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 480px;
+	}
+}
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: rgba(0, 0, 0, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
